@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="container">
+            <form action="action_page.php">
+            <h1>AGYW ATTENDANCE Form</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+    
+            <label for="text" class="safe-space"><b>Current Safe Space Name</b></label>
+            <input type="text" placeholder="Enter Safe Space Name" name="Safe-Space" id="safeSpace" required>
+    
+            <label for="text"><b>Cohort/Group Name</b></label>
+            <input type="text" placeholder="Enter group name" name="group" id="groupName" required>
+            <div class="age-group">
+            <label for="Age" class="ages"><b>Cohort Age Group:</b></label>
+            <br>
+                <input type="radio" id="10-14" name="age" value="10-14">
+                <label for="10-14">10-14</label>
+                
+            
+           
+                <input type="radio" id="15-19" name="age" value="25-19">
+                <label for="15-19">15-19</label>
+         
+            
+        
+                <input type="radio" id="20-24" name="age" value="20-24">
+                <label for="20-24">20-24</label>
+        
+
+                
+           
+
+            <hr>
+            <div class="screening-section">
+            <h2>COVID - 19 SCREENING TOOL - FOR BENEFICIARIES</h2>
+
+                <p>In the last one week has the beneficiary been in contact with someone diagnosed with COVID-19?</p>
+            <input type="radio" id="Yes" name="contact" value="Yes">
+            <label for="Yes">Yes</label>
+            
+            <input type="radio" id="No" name="contact" value="No">
+            <label for="No">No</label>
+
+            
+                <p>In the last one week has the beneficiary experienced any cough?</p>
+            <input type="radio" id="Yes" name="cough" value="Yes">
+            <label for="Yes">Yes</label>
+
+            <input type="radio" id="No" name="cough" value="No">
+            <label for="No">No</label>
+
+                <p>In the last one week has the beneficiary experienced any fever?</p>
+            <input type="radio" id="Yes" name="fever" value="Yes">
+            <label for="Yes">Yes</label>
+            
+            <input type="radio" id="No" name="fever" value="No">
+            <label for="No">No</label>
+
+            <p>In the last one week has the beneficiary experienced any shortness of breath?</p>                
+            <input type="radio" id="Yes" name="breath" value="Yes">
+            <label for="Yes">Yes</label>
+
+            <input type="radio" id="No" name="breath" value="No">
+            <label for="No">No</label>
+
+                <p>In the last one week has the beneficiary experienced any sore throat?</p>
+            <input type="radio" id="Yes" name="sore-throat" value="Yes">
+            <label for="Yes">Yes</label>
+            
+            <input type="radio" id="No" name="sore-throat" value="No">
+            <label for="No">No</label>
+
+
+                <p>In the last one week has the beneficiary experienced any body pains?</p>
+            <input type="radio" id="Yes" name="body-pains" value="Yes">
+            <label for="Yes">Yes</label>
+            
+            <input type="radio" id="No" name="body-pains" value="No">
+            <label for="No">No</label>
+
+            <p>In the last one week has the beneficiary experienced any loss of smell/taste?</p>
+            <input type="radio" id="Yes" name="smell/taste" value="Yes">
+            <label for="Yes">Yes</label>
+            
+            <input type="radio" id="No" name="smell/taste" value="No">
+            <label for="No">No</label>
+
+
+<label for="text"><b>Temperature</b></label>
+<input type="text" placeholder="Enter temperature" name="temperature" id="temperature">
+
+            </div>
+            <hr>
+        <div class="session-criteria">
+            <div class="session-heading">
+            <h2>Session criteria</h2>
+            </div>
+           
+            <div class="Q-months">
+                <ul><li>
+            <input type="radio" id="Q1" name="USAID Reporting Period" value="Q1">
+            <label for="Q1">Q1(Oct 2020 - Dec 2020)</label></li>
+        
+            
+ <li>
+            <input type="radio" id="Q2" name="USAID Reporting Period" value="Q2">
+            <label for="Q2">Q2 (Jan 2021 - Mar 2021)</label>
+           
+ </li>
+           <li>
+            <input type="radio" id="Q3" name="USAID Reporting Period" value="Q3">
+            <label for="Q3">Q3 (Apr 2021 - Jun 2021)</label>
+           </li>
+          <li>
+            <input type="radio" id="Q4" name="USAID Reporting Period" value="Q4">
+            <label for="Q4">Q4 (Jul 2021 - Sep 2021)</label>
+            </li>
+            </ul>
+            </div>
+            </div>
+
+
+            <div class="custom-select">
+                <label for="USAID Reporting PBMs">USAID Reporting Period by Months</label>
+                <select>
+                    <option value="1">October 2020</option>
+                    <option value="2">November 2020</option>
+                    <option value="3">December 2020</option>
+                    <option value="4">January 2021</option>
+                    <option value="5">February 2021</option>
+                    <option value="6">March 2021</option>
+                    <option value="7">April 2021</option>
+                    <option value="8">May 2021</option>
+                    <option value="9">June 2021</option>
+                    <option value="10">July 2021</option>
+                    <option value="11">August 2021</option>
+                    <option value="12">September 2021</option>
+
+                </select>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="sessions-criteria">
+            <h2>Session outcome</h2>
+            <h3>session topic:</h3>
+
+            <div class="session-topic">
+            <label for="Introduction">Introduction</label>
+                </div>
+            
+            <input type="radio" onclick="displayDateOne1()" id="Introduction" name="Introduction" value="Introduction" class="attended">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" onclick="displayDateTwo1()" id="Introduction" name="Introduction" value="Introduction">
+            <label for="Missed">Missed</label>
+
+            <br>
+                <p class="date-of-session" id="dateTitle1" >Date of Session :</p>
+            <input type="date" name="date" class="date" id="showDateOne">
+  
+            <br>
+
+                <div class="session-topic">
+            <label for="SE">Self-Esteem</label>
+            </div>
+            
+            <input type="radio" onclick="displayDateOne()"; id="SE" name="SE" value="one" class="attended">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" onclick="displayDateTwo()"; id="SE" name="SE" value="SE" class="missed">
+            <label for="Missed">Missed</label>
+
+            <br>
+
+            <p class="date-of-session" id="dateTitle2">Date of Session :</p>
+            <input type="date" name="date" id="showDate" class="date" >
+
+            <br>
+
+            <div class="session-topic">
+            <label for="DM">Decision Making</label>
+            </div>
+
+            <input type="radio" onclick="displayDateOne2()" id="DM" name="DM" value="DM">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" onclick="displayDateTwo2()" id="DM" name="DM" value="DM">
+            <label for="Missed">Missed</label>
+
+            <br>
+
+            <p class="date-of-session" id="dateTitle3">Date of Session :</p>
+            <input type="date" name="date" id="showDateThree" class="date">
+
+            <br>
+
+            <div class="session-topic">
+            <label for="Managing Stress">Managing stress, Anger & Conflict</label>
+            </div>
+
+            <input type="radio" id="MS" name="MS" value="MS">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="MS" name="MS" value="MS">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+            
+            <br>
+            <div class="session-topic">
+            <label for="DM">Leadership</label>
+            </div>
+            
+            <input type="radio" id="Leadership" name="Leadership" value="Leadership">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="Leadership" name="leadership" value="Leadership">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+
+            <br>
+
+            <div class="session-topic">
+            <label for="Aspirations">Apirations</label>
+            </div>
+
+            <input type="radio" id="Aspirations" name="Aspirations" value="Aspirations">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="Aspirations" name="Aspirations" value="Aspirations">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+
+            <br>
+            <div class="session-topic">
+            <label for="MH">Menstrual hygiene</label>
+            </div>
+
+            <input type="radio" id="MH" name="MH" value="MH">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="MH" name="MH" value="MH">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+
+            <br>
+
+            <div class="session-topic">
+            <label for="DG">Defining Gender</label>
+            </div>
+
+            <input type="radio" id="DG" name="DG" value="DG">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="DG" name="DG" value="DG">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+
+            <br>
+            <div class="session-topic">
+            <label for="CC">Consent & Cohersion</label>
+            </div>
+
+            <input type="radio" id="CC" name="CC" value="CC">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="CC" name="CC" value="CC">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+
+            <br>
+
+            <div class="session-topic">
+            <label for="RR">Reproductive rights</label>
+            </div>
+            
+            <input type="radio" id="RR" name="RR" value="RR">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="RR" name="RR" value="RR">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+
+            <br>
+            <div class="session-topic">
+            <label for="RH">RH Negotiation</label>
+            </div>
+            
+            <input type="radio" id="RH" name="RH" value="RH">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="RH" name="RH" value="RH">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+
+            <br>
+            <div class="session-topic">
+            <label for="DM">Money Management</label>
+            </div>
+            
+            <input type="radio" id="RH" name="RH" value="RH">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="RH" name="RH" value="RH">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+
+            <br>
+            <div class="session-topic">
+            <label for="SP">Savings Plan</label>
+            </div>
+
+            <input type="radio" id="SP" name="SP" value="SP">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="SP" name="SP" value="SP">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+
+            <br>
+            <div class="session-topic">
+            <label for="NW">Needs & Wants</label>
+            </div>
+            
+            <input type="radio" id="NW" name="NW" value="NW">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="NW" name="NW" value="NW">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+
+            <br>
+            <div class="session-topic">
+            <label for="SO">Safe Options for earning money</label>
+            </div>
+
+            <input type="radio" id="SO" name="SO" value="SO">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="SO" name="SO" value="SO">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+
+            <br>
+            <div class="session-topic">
+            <label for="FP">Financial planning for the future</label>
+            </div>
+
+            <input type="radio" id="FP" name="FP" value="FP">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="FP" name="FP" value="FP">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+
+            <br>
+            <div class="session-topic">
+            <label for="BT">Budgeting</label>
+            </div>
+            
+            <input type="radio" id="BT" name="BT" value="BT">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="BT" name="BT" value="BT">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+
+            <br>
+            <div class="session-topic">
+            <label for="B&L">Borrowing and lending money</label>
+            </div>
+            
+            <input type="radio" id="B&L" name="B&L" value="B&L">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="B&L" name="B&L" value="B&L">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+
+            <br>
+            <div class="session-topic">
+            <label for="TR">Talking and resolving conflicts about money</label>
+            </div>
+
+            <input type="radio" id="TR" name="TR" value="TR">
+            <label for="Attended">Attended</label>
+            
+            <input type="radio" id="TR" name="TR" value="TR">
+            <label for="Missed">Missed</label>
+            <br>
+            <input type="date" name="date" class="date">
+
+        </div>
+
+            <div class="custom-select-2">
+                <label for="Form Status">Complete?</label>
+                <select>
+                    <option value="0">Incomplete:</option>
+                    <option value="1">Unverified</option>
+                    <option value="2">Complete</option>
+                </select>
+            </div>
+
+            <button type="submit" class="registerbtn">Submit</button>
+        
+    </form>
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
