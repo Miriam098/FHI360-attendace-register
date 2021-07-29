@@ -10,9 +10,13 @@
 <body>
         <div class="container">
             <form action="action_page.php">
-            <h1>AGYW ATTENDANCE Form</h1>
-            <p>Please fill in this form to create an account.</p>
+            <h1>SERVICE REGISTER</h1>
             <hr>
+            <label for="text" class="safe-space"><b>First Name</b></label>
+            <input type="text" placeholder="Enter AGYW First Name" name="Safe-Space" id="safeSpace" required>
+
+            <label for="text" class="safe-space"><b>Surname</b></label>
+            <input type="text" placeholder="Enter AGYW Surname" name="Safe-Space" id="safeSpace" required>
     
             <label for="text" class="safe-space"><b>Current Safe Space Name</b></label>
             <input type="text" placeholder="Enter Safe Space Name" name="Safe-Space" id="safeSpace" required>
@@ -106,6 +110,7 @@
             </div>
            
             <div class="Q-months">
+                <p>USAID Reporting Period</p>
                 <ul><li>
             <input type="radio" id="Q1" name="USAID Reporting Period" value="Q1">
             <label for="Q1">Q1(Oct 2020 - Dec 2020)</label></li>
@@ -425,6 +430,36 @@
         </div>
 
         <hr>
+        <div>
+        <p><b>I understand that this safe-space has implemented reasonable security measures to guard against the unauthorized
+                disclosure of my personal information and that I may revoke my authorization in writing at any time. My personal
+                information may be disclosed by this safe-space, without my consent, in response to a specific request by a law
+                enforcement agency, subpoena, court order, or as required by law. I acknowledge that my personal information
+                needs to be
+                processed by the DREAMS program and therefore grant the following consent:
+                I acknowledge and accept that the safe space will during the course of rendering services to me, collect and
+                have access
+                to my personal information, including information relating to my race, gender, sex, national, ethnic, or social
+                origin,
+                colour, age, language, identifying number, symbol, e-mail address, physical address, telephone number and
+                location
+                information.
+                I grant my express consent for the safe space to collect and process this information for the purpose of
+                rendering
+                services to me as well as reporting of statistics to the funders. Administrative staff employed by the DREAMS
+                program
+                may be granted access to my personal information, including any notes, in order to report to the funders. The
+                safe space
+                makes use of the FHI360 REDCap database and I grant my consent to the processing of my personal information by
+                FHI360
+                REDCap database as is required to manage the program.
+                I accept that my personal information will be accessed and processed by my mentors.
+                I accept that my personal information will only be utilized for the purpose it was collected for and that the
+                information will only be retained for as long as is necessary and required by law, and that I have the right to
+                view
+                such information at any time.</b></p>
+                <a href="#">Add Signature</a>
+        </div>
 
             <div class="custom-select-2">
                 <label for="Form Status">Complete?</label>
@@ -435,6 +470,7 @@
                 </select>
             </div>
             <hr>
+            
 
             <button type="submit" class="registerbtn">Submit</button>
         
